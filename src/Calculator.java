@@ -18,7 +18,7 @@ public class Calculator {
         System.out.println(num1);
         System.out.println(num2);
 
-        System.out.println("+, -을 입력하세요.");
+        System.out.println("+, -, *, /을 입력하세요.");
 
 
         int intnum1 = Integer.parseInt(num1);
@@ -26,17 +26,34 @@ public class Calculator {
 
         String opcode = sc.next();
 
-        if (opcode.equals("+")) {
-            result = intnum1 + intnum2;
-        } else if (opcode.equals("-")) {
-            result = intnum1 - intnum2;
-        } else if (opcode.equals("*")) {
-            result = intnum1 * intnum2;
-        } else if (opcode.equals("/")) {
-            result = intnum1 / intnum2;
-        } else {
-            System.out.println("잘못된 연산 기호입니다.");
+        switch (opcode){
+            case "+":
+                result = intnum1 + intnum2;
+                break;
+            case "-":
+                result = intnum1 - intnum2;
+                break;
+            case "*":
+                result = intnum1 * intnum2;
+                break;
+            case "/":
+                result = intnum1 / intnum2;
+                break;
+            default:
+                System.out.println("error");
         }
+
+//        if (opcode.equals("+")) {
+//            result = intnum1 + intnum2;
+//        } else if (opcode.equals("-")) {
+//            result = intnum1 - intnum2;
+//        } else if (opcode.equals("*")) {
+//            result = intnum1 * intnum2;
+//        } else if (opcode.equals("/")) {
+//            result = intnum1 / intnum2;
+//        } else {
+//            System.out.println("잘못된 연산 기호입니다.");
+//        }
 
         System.out.println("연산결과 : " + result);
     }
