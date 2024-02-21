@@ -14,68 +14,31 @@ public class Member {
         private String address;
         private String job;
 
+        public Member(String id,String pw,String pwAgain
+                ,String name,String personId,String phoneNumber
+        ,String address,String job){
+            this.id = id;
+            this.pw=pw;
+            this.pwAgain=pwAgain;
+            this.name=name;
+            this.personId=personId;
+            this.phoneNumber=phoneNumber;
+            this.address=address;
+            this.job=job;
 
-    public String getId() {
-        return id;
-    }
+        }
 
-    public void setId(String id) {
-        this.id = id;
-    }
-
-    public String getPw() {
-        return pw;
-    }
-
-    public void setPw(String pw) {
-        this.pw = pw;
-    }
-
-    public String getPwAgain() {
-        return pwAgain;
-    }
-
-    public void setPwAgain(String pwAgain) {
-        this.pwAgain = pwAgain;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public String getPersonId() {
-        return personId;
-    }
-
-    public void setPersonId(String personId) {
-        this.personId = personId;
-    }
-
-    public String getPhoneNumber() {
-        return phoneNumber;
-    }
-
-    public void setPhoneNumber(String phoneNumber) {
-        this.phoneNumber = phoneNumber;
-    }
-
-    public String getAddress() {
-        return address;
-    }
-
-    public void setAddress(String address) {
-        this.address = address;
-    }
-
-    public String getJob() {
-        return job;
-    }
-
-    public void setJob(String job) {
-        this.job = job;
+    @Override
+    public String toString() {
+        return "Member{" +
+                "id='" + id + '\'' +
+                ", pw='" + pw + '\'' +
+                ", pwAgain='" + pwAgain + '\'' +
+                ", name='" + name + '\'' +
+                ", personId='" + personId + '\'' +
+                ", phoneNumber='" + phoneNumber + '\'' +
+                ", address='" + address + '\'' +
+                ", job='" + job + '\'' +
+                '}';
     }
 }

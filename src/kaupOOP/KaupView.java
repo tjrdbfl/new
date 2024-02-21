@@ -1,6 +1,7 @@
 package kaupOOP;
 
 public class KaupView {  //메소드 3개
+    static String test;
     public static void main(String[] args) {
 
         Person person=new Person();

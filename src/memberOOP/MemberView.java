@@ -11,40 +11,12 @@ public class MemberView {
 
         Scanner sc = new Scanner(System.in);
 
-        Member member=new Member();
+        Member member=new Member(sc.next(), sc.next()
+                ,sc.next(),sc.next()
+                , sc.next(), sc.next()
+                , sc.next(), sc.next());
 
-        System.out.println("id를 입력해주세요");
-        member.setId(sc.next());
-
-        System.out.println("비밀번호를 입력해주세요");
-        member.setPw(sc.next());
-
-        System.out.println("비밀번호를 한번 더 입력해주세요");
-        member.setPwAgain(sc.next());
-
-        System.out.println("이름를 입력해주세요");
-        member.setName(sc.next());
-
-        System.out.println("주민번호를 입력해주세요");
-        member.setPersonId(sc.next());
-
-        System.out.println("전화번호를 입력해주세요");
-        member.setPhoneNumber(sc.next());
-
-        System.out.println("주소를 입력해주세요");
-        member.setAddress(sc.next());
-
-        System.out.println("직업을 입력해주세요");
-        member.setJob(sc.next());
-
-        System.out.println("ID : " + member.getId());
-        System.out.println("비 번 : " + member.getPw());
-        System.out.println("비번확인 : " + member.getPwAgain());
-        System.out.println("이 름 : " + member.getName());
-        System.out.println("주민번호 : " + member.getPersonId());
-        System.out.println("전화번호 : " + member.getPhoneNumber());
-        System.out.println("주 소 : " + member.getAddress());
-        System.out.println("직업 : " + member.getJob());
+        System.out.println(member.toString());
 
     }
 }
